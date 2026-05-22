@@ -48,8 +48,3 @@ def view(post_id):
 
     return render_template("view.html", post=post)
 
-import os
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
