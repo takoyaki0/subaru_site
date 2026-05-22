@@ -16,6 +16,8 @@ def init_db():
         """)
         conn.commit()
 
+init_db()
+
 @app.route("/")
 def index():
     with sqlite3.connect(DB) as conn:
